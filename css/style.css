@@ -40,7 +40,7 @@ font-family: 'Roboto Condensed', sans-serif;
  h4 {
    font-family: 'Roboto Condensed', sans-serif;
    font-weight: 700;
-   font-size: 1.5em;
+   font-size: 2em;
    font-style: oblique;
    text-transform: uppercase;
    color: red;
@@ -49,10 +49,19 @@ font-family: 'Roboto Condensed', sans-serif;
  h5 {
    font-family: 'Roboto Condensed', sans-serif;
    font-weight: 700;
-   font-size: 4em;
+   font-size: 2em;
    font-style: oblique;
    text-transform: uppercase;
    color: red;
+ }
+
+ h6 {
+   font-family: 'Roboto Condensed', sans-serif;
+   font-weight: 700;
+   font-size: 1em;
+   font-style: oblique;
+   text-transform: uppercase;
+   color: grey;
  }
 
  body{
@@ -71,9 +80,14 @@ font-family: 'Roboto Condensed', sans-serif;
 
  .container{
    justify-content: center;
-
  }
 
+#form-rapper{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+
+}
 hr{
   margin-top: -2%;
   position: inherit;
@@ -92,14 +106,31 @@ div.form-wapper {
   display: flex;
 }
 
-div.name-and-manufacturer div.position-and-finish{
+div.name-and-manufacturer, div.position-and-finish{
   display: flex;
   justify-content: space-around;
   padding-right: 2%;
+  width: 50%;
 
 }
 
 ul {
   display: inline;
   margin: auto;
+}
+
+#race-list{
+  display: flex;
+  flex-direction: column;
+}
+
+.race-list-item{
+  width: 600px;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:row;
+  align-content:center;
+  border: 1px solid #252525;
+  padding: 1em;
+  margin:inherit;
 }
