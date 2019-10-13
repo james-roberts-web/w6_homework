@@ -21,23 +21,23 @@ const createRaceListItem = function (form) {
   const raceListItem = document.createElement('li');
   raceListItem.classList.add('race-list-item');
 
-  const driver = document.createElement('h2');
+  const driver = document.createElement('h3');
   driver.textContent = form.driver.value;
   raceListItem.appendChild(driver);
 
-  const manufacturer = document.createElement('h3');
+  const manufacturer = document.createElement('h4');
   manufacturer.textContent = form.manufacturer.value;
   raceListItem.appendChild(manufacturer);
 
-  const position = document.createElement('h4');
+  const position = document.createElement('h5');
   position.textContent = form.position.value;
   raceListItem.appendChild(position);
 
-  const finishedretired = document.createElement('p');
+  const finishedretired = document.createElement('h6');
   finishedretired.textContent = form.finishedretired.value;
   raceListItem.appendChild(finishedretired);
 
-  const tyretype = document.createElement('p');
+  const tyretype = document.createElement('h6');
   tyretype.textContent = form.tyres.value;
   raceListItem.appendChild(tyretype);
 
