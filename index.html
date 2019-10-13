@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <title>Race Stats Log</title>
+  <script src="js/app.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <h1>Race Stats Log</h1>
+  <p id="welcome-paragraph">The race has finished, log the results below.</p>
+
+
+  <form id="new-item-form">
+    <div id="form-wrapper">
+      <div class="form-item">
+        <label for="driver" class="primary">Driver Name</label>
+        <input type="text" id="driver" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="manufacturer" class="primary">Manufacturer</label>
+        <input type="text" id="manufacturer" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="position" class="primary">Position</label>
+        <input type="text" id="position" required/>
+      </div>
+
+      <div class="form-item">
+        <label for="finishedretired" class="primary">Finished / Retired?</label>
+        <select id="finishedretired">
+          <option value="" disabled selected></option>
+          <option value="Finished">Finished</option>
+          <option value="Retired">Retired</option>
+        </select>
+      </div>
+
+      <div class="form-item">
+
+        <p>Finishing tyre type:</p>
+
+        <input for="tyres" type="radio" id="tyres" name="tyres" value="soft" checked>
+        <label for="soft">Soft</label>
+
+        <input for="tyres" type="radio" id="tyres" name="tyres" value="medium">
+        <label for="medium">Medium</label>
+
+        <input for="tyres" type="radio" id="tyres" name="tyres" value="hard">
+        <label for="hard">Hard</label>
+
+      </div>
+
+    </div>
+
+    <input type="submit" value="save">
+
+  </form>
+
+
+
+  <button id="delete">Reset race stats</button>
+
+
+
+  <h1>Race Results:</h1>
+
+  <div id="race-list"></div>
+
+</body>
+</html>
